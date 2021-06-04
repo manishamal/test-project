@@ -4,8 +4,9 @@ Feature: Login
 
         Given User is at the login page
         When User enters email as '<email>' and password as '<password>'
-        And User clicks on login button
-        Then User is able to successfully login to the Website
+        And User clicks on 'Login' button
+        Then User waits  for few seonds and navigate to next screen with having '/dashboard' in url
+        And User see "Welcome" text on the screen
         Examples:
             | email | password |
             | test@gmail.com | admin123 |
@@ -15,7 +16,7 @@ Feature: Login
 
         Given User is at the login page
         When User enters email as '<email>' and password as '<password>'
-        And User clicks on login button
+        And User clicks on 'Login' button
         Then User is remains at login page and alert with "invalid email and password" will be shown
         Examples:
             | email | password |
@@ -23,7 +24,4 @@ Feature: Login
 
 
 
-
-
-
-   
+            
