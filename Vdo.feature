@@ -10,7 +10,7 @@ And user will see the below information
 | User |  Status |       email            | Start Date  | Due Date | Action  |
 | Durga | Paid | durgadevi1228@gmail.com | 03/06/21   |  02/0/21 |  ...  |
 
-And click on action colmn we can delete any user
+And click on 'Meatballs Menu' in the column "Action" we can delete any user
 And on right side dropdown with Name 'Paid users'
 
 Scenario: Paid users

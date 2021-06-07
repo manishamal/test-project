@@ -2,8 +2,8 @@ Feature Schedule Workouts
 Scenario: Workouts
 
 Given Open the web url Workouts
-When click on the  “Workouts”
-Then user will show two buttons “Workout Name” and “Add Workout”
+When click on the  'Workouts'
+Then user will show two buttons 'Workout Name' and 'Add Workout'
 And one right side dropdown with Name 'Active workout'
 
 Scenario: Workouts Name
