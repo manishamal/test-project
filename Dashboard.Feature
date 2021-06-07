@@ -3,7 +3,7 @@ Feature: Dashboard
 
 
         Given User is at the Dashboard
-        Then user will see two buttons 'Dashboard' and 'Go Live' and also show the search bar top of the page
+        Then verify the page-title should be 'Dashboard' and button should have title 'Go Live'
         Then user see some "<stack>", ' Graph Weekly Audience' and chart 'Top Five Workouts'
        
             Examples: Some example
@@ -13,16 +13,18 @@ Feature: Dashboard
     
     Scenario: Graph Weekly Audience  
        
-        Given User on the  Weekly Audience
+        Given User is at the  Weekly Audience
         When user will see Graph Weekly Audience with details
+        And also will see select button right side on the Graph Weekly Audience 
+        
 
 
 
     Scenario: Top Five Workouts  
        
-        Given User on the Top Five Workouts
+        Given User on the Top five Workouts
         When user will see chart Top Five Workouts
-        Then all workout shown on the screen with its Name, Type , and progress bar
+        Then All workout shown on the screen with its Name, Type , and progress bar.
 
 
 

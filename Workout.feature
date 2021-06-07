@@ -3,15 +3,19 @@ Scenario: Workouts
 
 Given Open the web url Workouts
 When click on the  'Workouts'
-Then user will show two buttons 'Workout Name' and 'Add Workout'
-And one right side dropdown with Name 'Active workout'
+When user will show two buttons should have title 'Workout Name' and 'Add Workout'
 
-Scenario: Workouts Name
+
+Scenario:  Select Workouts Name
 Given user on workout Name
-When user click on button 'Workout Name'
-Then all workout shown on the screen with its Name, Type , kebab menu icon and pagination
-When user want to edit or disable the Workout click on kebab menu icon
-When click on page number user can see  next and privious workouts on the page
+Then User select a option from from list 
+Then User will see workouts Name, Type ,pagination
+And User will see title 'kebab menu icon'
+When User click on 'kebab menu icon'
+Then User will see two option should have title 'Edit' and 'Disable'
+When User want to edit Workout click on 'Edit'
+When User want to disable Workout click on 'Disable'
+
 
 Scenario: Add Workout
 

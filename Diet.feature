@@ -6,12 +6,15 @@ When click on the 'Diets'
 Then user will show two buttons 'Breakfast' and 'Add meal'
 And one right side dropdown with Name 'Active meals'
 
-Scenario: Breakfast chart
+Scenario: Select Breakfast Diet
 Given user on  Breakfast
 When user click on button ' Breakfast'
-Then all workout shown on the screen with its Name, Type , kebab menu icon and pagination
-When user want to edit or disable the Diets click on 'kebab icon'
-When click on page number user can see  next and privious Breakfast on the page
+Then User will see breakfast chart with Name, Type ,pagination
+And User will see title 'kebab menu icon'
+When User click on 'kebab menu icon'
+Then User will see two option should have title 'Edit' and 'Disable'
+When User want to edit diet click on 'Edit'
+When User want to disable  diet click on 'Disable'
 
 Scenario: Add meal
 
