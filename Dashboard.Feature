@@ -8,15 +8,15 @@ Feature: Dashboard
        
             Examples: Some example
                 | stack |
-                | Total Audience, Total Exercises,  Total Meals,  Paid Audience,  Free Audience, |
+                | Total Audience, Total Exercises, Paid Audience, Free Audience, |
 
     
-    Scenario: Graph Weekly Audience  
+    Scenario: Graph Monthly Audience  
        
-        Given User is at the  Weekly Audience
-        When user will see Graph Weekly Audience with details
+        Given User is at the Monthly Audience
+        When user will see Graph Monthly Audience with details
         And also will see select button right side on the Graph Weekly Audience 
-        
+
 
 
 
