@@ -1,49 +1,18 @@
-Feature: Events
+Feature Event
+Scenario: Schedule events
 
-    Scenario Outline: Open Events
+Given Open the web url events
+Then verify the page-title should be 'Schedule Event'
+When user will show two buttons   Should have title 'schedule Event' and 'Create Event'
+When user click on button should have title 'Schedule Event'
+Then show schedule events
+When user click on button should have title 'Create Event'
+Then show create event form
 
-        Given  open the Events web url
-        Then User verify title of web page as 'Event'
-        When User will show the two buttons '<Schedule Event>' and '<Create Event>'
-        Then 
-       
+Scenario: Create event
 
-    Scenario: Schedule Event       
-    
-        Given User is at the Schedule Event
-        Then  verify title of web page as 'Google'
-        When User clicks on '<Schedule Event>' 
-        Then User will show Events
-
-
-    Scenario: Create Event       
-    
-        Given User is at the Create Event  
-        When User clicks on '<Create Event>' 
-        Then User will show Create Event Form
-        Then User upload the card image
-
-        Then  User enters title as '<title >' , sub-title as '<sub-title>' and  Date as '<Date>'
-        And User clicks on Save button
-        Then User is able to successfully to Create Event 
-        
-        Examples: 
-            | title  | sub-title |  Date          |
-            | any anme    | test1234  | 4/6/2021       |
-            
-        
-
-@UI
-Feature: Navigating to Google.com and verifying title and match result keyword
-    @smoke @test
-    Scenario: Perform Search
-        Given I open the Google web url
-        Then I verify title of web page as 'Google'
-        When I provide search query as "Pokemon"
-        Then Verify first search result to match "Pokemon" keyword
-
-
-    
-
-
-            
+Given user on the Create Event page
+And user upload 'upload-image' with 'image'
+And user enters “title” as '<title >' , “subtitle” as '<sub-title>' and   “date” as '<Date>'
+Then click on button should have title 'Create Event'
+Then show 'alert-title' have value 'Event created successfully'
