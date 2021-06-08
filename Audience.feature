@@ -1,12 +1,13 @@
 Feature Audience who join the workouts
 
-Scenario : Audience
+Scenario Outline : Audience
 Given User at the Audience page
 When User click on 'Audience' button
 Then User will see the Audience table with all information
 And User will see the below information
 
 Examples:
+| Audience |
 | User |  Status |       email            | Start Date  | Due Date | Action  |
 | Durga | Paid | durgadevi1228@gmail.com | 03/06/21   |  02/0/21 |  ...  |
 
