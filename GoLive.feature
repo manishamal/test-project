@@ -1,16 +1,23 @@
-Feature: User on live
+Feature: User want go to live
 
-    Scenario: User join the meeting
-       
-        Given User on Go Live
-        Then User will see open the live screen 
-        And Show the discriptions 
-        When User wants send the comments 
-        Then User will enter type "input" as 'input'
-        And click on message send icon
-        Then User will show the button 'End Live'
-        When User click on the button 'End Live'
-        Then User out off the live screen
+    Scenario: Go Live
+        Given User on Dashboard
+        When User wants to GO Live
+        Then User will enter the title as 'title' and discription as 'discription'
+        Then User should be click on the button 'Go Live' 
+        And User should check the person live or not
+        Then User will see comming the comments and live audience
+        When User want send any message
+        Then User should be enter the input as 'input'
+        And click on send 'Icon' 
+
+
+     Scenario: User want End Live 
+        
+        Given User on GO Live
+        When User want to  end live 
+        Then User should be click on the button 'End Live' 
+
 
         
 
