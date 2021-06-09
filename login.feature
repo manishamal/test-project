@@ -1,7 +1,6 @@
 Feature: Login
 
     Scenario Outline: Login successfull
-
         Given User is at the login page
         When User enters email as '<email>' and password as '<password>'
         And User clicks on 'Login' button
@@ -13,7 +12,6 @@ Feature: Login
 
 
     Scenario Outline:  Login failed
-
         Given User is at the login page
         When User enters email as '<email>' and password as '<password>'
         And User clicks on 'Login' button

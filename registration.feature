@@ -1,6 +1,6 @@
 Feature: Register a User
-    Scenario Outline: Register successfull
 
+    Scenario Outline: Register successfull
         Given User is at the Register page
         When User enters email as '<email>' and password as '<password>'
         And User clicks on '<login button>'

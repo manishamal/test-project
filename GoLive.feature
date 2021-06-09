@@ -12,15 +12,7 @@ Feature: User want go to live
         And click on send 'Icon' 
 
 
-     Scenario: User want End Live 
-        
+    Scenario: User want End Live       
         Given User on GO Live
         When User want to  end live 
         Then User should be click on the button 'End Live' 
-
-
-        
-
-
-       
-
