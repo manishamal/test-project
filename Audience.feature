@@ -2,7 +2,7 @@ Feature: Audience who join the workouts
 
     Scenario Outline: Audience
         Given User at the Audience page
-          Then verify the page-title should be 'Audience' and show the 'Go Live' button
+        Then verify the page-title should be 'Audience' and show the 'Go Live' button
         When User click on the 'GO Live' 
         Then User waits  for few seonds and navigate to next screen with having '/GO Live' in url 
         When User click on 'Audience' button
