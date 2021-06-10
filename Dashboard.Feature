@@ -25,7 +25,7 @@ Feature: Dashboard
 
     Scenario: Top Five Workouts  
         Given User is at the title Top five Workouts
-        Then All workout shown on the screen with its Name,exercise type,graph and viwe audience     smfsv
+        Then All workout shown on the screen with its Name,exercise type,graph and view audience   
 
 
     
