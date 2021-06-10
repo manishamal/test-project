@@ -15,7 +15,7 @@ Feature: Login
         Given User is at the login page
         When User enters email as '<email>' and password as '<password>'
         And User clicks on 'Login' button
-        Then User is remains at login page and alert with "invalid email and password" will be shown
+        Then User is remains at login page and alert with 'invalid email and password'will be shown
         Examples:
             | email | password |
             | test@gmail.com | admin321 |            
